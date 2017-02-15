@@ -6,7 +6,8 @@ An example of linter use.
 
 ```shell
 git clone https://github.com/portsoc/ws_lint.git
-npm init
+cd ws_lint
+npm install
 npm test
 ```
 
