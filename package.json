@@ -1,0 +1,40 @@
+{
+  "name": "lintme",
+  "version": "1.0.0",
+  "description": "A project that might benefit from linting.",
+  "main": "lintme.js",
+  "scripts": {
+    "test": "./node_modules/.bin/eslint src/*.js"
+  },
+  "keywords": [
+    "lint",
+    "linter",
+    "test",
+    "quality"
+  ],
+  "author": "Rich Boakes <rjb@boakes.org> (http://boakes.org/)",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-google": "^0.7.1"
+  },
+
+
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "rules": {
+      "no-var": [ "error" ],
+      "indent": [ "error", 4 ],
+      "linebreak-style": [ "error", "unix" ],
+      "quotes": [ "error", "single" ],
+      "semi": [ "error", "always" ],
+      "no-use-before-define": ["error"],
+      "space-in-parens": [2, "never"]
+    }
+  }
+
+}
