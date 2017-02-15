@@ -3,6 +3,6 @@ console.log("i="+i);
 example();
 console.log("i="+i);
 function example( ) {
-	console.log("i="+i);
-	var i=3;
+console.log("i="+i);
+var i=3;
 };

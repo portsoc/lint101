@@ -4,7 +4,8 @@
   "description": "A project that might benefit from linting.",
   "main": "lintme.js",
   "scripts": {
-    "test": "./node_modules/.bin/eslint src/*.js"
+    "test": "./node_modules/.bin/eslint src/*.js",
+    "start": "node src/lintme.js"
   },
   "keywords": [
     "lint",
@@ -16,25 +17,44 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^3.15.0",
+    "eslint-config-crockford": "^1.0.0",
     "eslint-config-google": "^0.7.1"
   },
-
-
   "eslintConfig": {
-    "extends": "eslint:recommended",
+    "_extends": "eslint:recommended",
+    "_extends": "crockford",
+    "extends": "google",
     "env": {
-        "browser": true,
-        "es6": true
+      "browser": true,
+      "es6": true
     },
     "rules": {
-      "no-var": [ "error" ],
-      "indent": [ "error", 4 ],
-      "linebreak-style": [ "error", "unix" ],
-      "quotes": [ "error", "single" ],
-      "semi": [ "error", "always" ],
-      "no-use-before-define": ["error"],
-      "space-in-parens": [2, "never"]
+      "no-var": [
+        "error"
+      ],
+      "indent": [
+        "error",
+        4
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-use-before-define": [
+        "error"
+      ],
+      "space-in-parens": [
+        2,
+        "never"
+      ]
     }
   }
-
 }
