@@ -25,15 +25,3 @@ look the same as ours.  This consistency should help you read our,
 code and it will make it easier when you ask for help because we'll be
 able to discount many potential sources of error immediately.
 
-
-## Installing a linter in your preferred editor
-### Atom
-There are several linter options in Atom; for example, the [linter](https://atom.io/packages/linter) package is an extensible base-linter that supports [eslint](https://atom.io/packages/linter-eslint) and [many other linting tools](http://atomlinter.github.io/)
-
-```shell
-apm install linter
-apm install linter-eslint
-```
-
-Once installed, the errors that are reported by `npm test` should appear alongside the code in your editor, giving you edit-time feedback.
-
