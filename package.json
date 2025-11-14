@@ -16,8 +16,8 @@
   "author": "SoftEng <softeng@port.ac.uk>",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.21.0",
-    "eslint-config-portsoc": "^0.8.1"
+    "eslint": "^9.39.1",
+    "eslint-config-portsoc": "^1.0.1"
   },
   "eslintConfig": {
     "extends": "portsoc",
